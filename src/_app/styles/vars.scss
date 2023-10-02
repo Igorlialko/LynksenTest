@@ -1,0 +1,44 @@
+:root {
+  //==global
+  //--fontFamily: 'Inter';
+  --fontSize: 16px;
+  --line-height: 160%;
+  --app-height: 100vh;
+  //===============WIDTH====================
+  --minWidth: 375px;
+  --maxWidthContainer: 1240px;
+  //===colors
+  // UI-kit colors
+
+  //========text===========
+  --text-main: #373d59;
+  --text-main-white: #f0f5ff;
+  --text-secondary-grey: #9ba0a7;
+  --text-tertiary-dark-grey: #696e76;
+
+  //=======background======
+  --bg-hover: #4c535e;
+  --bg-main-black: #010a18;
+  --bg-success: #008756;
+  --bg-error: #d83640;
+  --bg-card: #8c6ced;
+
+  //====primary=====
+  --primary-active-blue: #1a70ff;
+  --primary-active-blue-hover: #0054df;
+  --primary-active-orange: #ff3f18;
+
+  //======surface======
+  --surface-level1-5: #002666;
+  --surface-level1-4: #001d4d;
+  --surface-level1-3: #08162b;
+  --surface-level1-2: #061122;
+  --surface-level1-1: #050d1a;
+
+  --surface-level2-2: #081b37;
+
+  //==========
+
+  --main-linear: linear-gradient(180deg, #9b7efa 0%, #7e5ae1 100%);
+  --main-linear-hover: linear-gradient(180deg, #876fcb 0%, #6238d9 100%);
+}
