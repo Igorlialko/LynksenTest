@@ -8,7 +8,10 @@
   max-width: 1440px;
   margin: 0 auto;
   transition: opacity 0.3s;
+
   &.mainLoading {
+    pointer-events: none;
+    user-select: none;
     opacity: 0;
   }
 }
