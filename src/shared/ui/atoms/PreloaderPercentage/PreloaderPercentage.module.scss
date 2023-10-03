@@ -1,0 +1,16 @@
+.preloaderPercentage {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.percent,
+.percent span {
+  font-weight: 700;
+  color: var(--bg-card);
+  font-size: 22px;
+  line-height: 32px;
+  user-select: none;
+}

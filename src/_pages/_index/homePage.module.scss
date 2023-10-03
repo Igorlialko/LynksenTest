@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  align-items: center;
+  height: var(--app-height);
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  transition: opacity 0.3s;
+  &.mainLoading {
+    opacity: 0;
+  }
+}

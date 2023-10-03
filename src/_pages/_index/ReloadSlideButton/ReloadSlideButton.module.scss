@@ -1,0 +1,57 @@
+.reload {
+  padding: 9px 24px;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  z-index: 21;
+  background: var(--main-linear);
+  border-radius: 15px;
+  opacity: 0;
+  animation: opacity 0.5s forwards;
+  &.disable {
+    pointer-events: none;
+  }
+  img {
+    transition: transform 300ms;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      img {
+        transform: rotate(360deg);
+      }
+      background: var(--main-linear-hover);
+    }
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-height: 760px) {
+  .reload {
+    right: 40px;
+  }
+}
+
+@media (max-width: 1248px) {
+  .reload {
+    right: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .reload {
+    right: 20px;
+  }
+  @media (max-height: 456px) {
+    .reload {
+      top: 10px;
+    }
+  }
+}

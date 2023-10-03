@@ -1,0 +1,38 @@
+.back {
+  padding: 9px 24px;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  z-index: 21;
+
+  background: var(--main-linear);
+  border-radius: 15px;
+  opacity: 0;
+
+  @media (hover: hover) {
+    &:hover {
+      background: var(--main-linear-hover);
+    }
+  }
+}
+@media (max-height: 760px) {
+  .back {
+    left: 40px;
+  }
+}
+@media (max-width: 1248px) {
+  .back {
+    left: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .back {
+    left: 20px;
+  }
+  @media (max-height: 456px) {
+    .back {
+      top: 10px;
+    }
+  }
+}

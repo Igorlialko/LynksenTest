@@ -1,13 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import { CatsBreed, CatsBreedImage } from './types';
+
 interface IInitialState {
-  breeds: any[];
-  isLoadingBreeds: boolean;
+  breeds: CatsBreed[];
+  images: {
+    [key: string]: CatsBreedImage[];
+  };
+  activeSlide: CatsBreed | null;
 }
 
 const initialState: IInitialState = {
   breeds: [],
-  isLoadingBreeds: true,
+  images: {},
+  activeSlide: null,
 };
 
 const catsSlice = createSlice({
@@ -17,11 +23,17 @@ const catsSlice = createSlice({
     setBreeds(state, { payload }) {
       state.breeds = payload;
     },
-    setIsLoadingBreeds(state, { payload }) {
-      state.isLoadingBreeds = payload;
+    setImages(state, { payload }) {
+      state.images = {
+        ...state.images,
+        ...payload,
+      };
+    },
+    setActiveSlide(state, { payload }) {
+      state.activeSlide = payload;
     },
   },
 });
 
 export default catsSlice.reducer;
-export const { setBreeds, setIsLoadingBreeds } = catsSlice.actions;
+export const { setBreeds, setImages, setActiveSlide } = catsSlice.actions;

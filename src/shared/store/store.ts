@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import catsReducer from './reducers/catsReducer';
+import commonReducer from './reducers/commonReducer';
 
 export const store = configureStore({
   reducer: {
     catsReducer,
+    commonReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

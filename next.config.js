@@ -7,6 +7,7 @@ const shortid = require('shortid');
 // });
 
 const nextConfig = {
+  output: 'standalone',
   env: {
     version: shortid.generate(),
   },
@@ -105,8 +106,8 @@ const nextConfig = {
     ];
   },
   images: {
-    unoptimized: true,
-    domains: [],
+    // unoptimized: true,
+    domains: ['cdn2.thecatapi.com'],
   },
 };
 

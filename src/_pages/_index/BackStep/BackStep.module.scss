@@ -1,0 +1,37 @@
+.backStep {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: calc(100% + 100px);
+  z-index: 100;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.images {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 0;
+
+  img {
+    height: initial;
+    width: calc(20% - 20px * 4 / 5);
+    object-fit: cover;
+  }
+}
+@media (max-width: 456px) {
+  .backStep {
+    width: calc(100% + 20px);
+  }
+  .images {
+    gap: 8px;
+    img {
+      height: initial;
+      width: calc(20% - 8px * 4 / 5);
+      object-fit: cover;
+    }
+  }
+}

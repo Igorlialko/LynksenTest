@@ -11,7 +11,7 @@ export default NotFound;
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
-      messages: pick((await import(`LynksenTest/src/_app/intl/${locale}.js`)).default, []),
+      messages: pick((await import(`src/_app/intl/${locale}.js`)).default, []),
     },
   };
 }

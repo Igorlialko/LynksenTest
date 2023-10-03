@@ -1,0 +1,9 @@
+export const titleSlideId = 'title_slide';
+export const positionSlideId = 'position_slide';
+export const descriptionSlideId = 'description_slide';
+export const activeSlideId = 'active_slide';
+export const backgroundStepId = 'background_step';
+export const backSlideButtonId = 'back_slide_button';
+export const backStepId = 'back_step';
+export const breadsListId = 'breads_list';
+export const lineInfinityId = 'line_infinity';

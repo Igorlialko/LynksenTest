@@ -1,0 +1,1 @@
+export { CatImage } from './CatImage';
