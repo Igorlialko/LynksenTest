@@ -7,7 +7,6 @@ const shortid = require('shortid');
 // });
 
 const nextConfig = {
-  output: 'standalone',
   env: {
     version: shortid.generate(),
   },
